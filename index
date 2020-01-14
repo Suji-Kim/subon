@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:grey;">
+<head>
+	<meta charset="utf-8"/>
+	
+	<title>HappyBirthDaySubin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+
+	<style type="text/css">
+		html{font-family: 'noto', sans-serif;}
+		body{overflow:hidden;font-family: noto;}
+		img{ width: 100%; }
+		a{display: block;height:2280px;}
+		section{ width:1080px; position: relative;}
+ 		#sectionA{ height: 2280px; background-color: white;}
+		#intro{ width:900px; height:200px; overflow:hidden; position: absolute;left:530px; top:105px;color: black; text-align: left; font-size: 1.5em; line-height: 180%; font-weight: bold;}
+		#intro2{ width:400px; height:200px; overflow:hidden; position: absolute;left:80px; top:105px;color: black; text-align: left; font-size: 8em; font-weight: 900;}
+		#ruler{position: absolute; top:30px; color: pink; font-size: 2em; font-weight: bold;}
+		.bdbd{width:460px; height:260px; position: absolute; left: 530px; top:300px;}
+
+/*여기는 오른쪽부분 마크*/
+		
+		
+		#menua{ width:138px; height:250px; overflow:hidden;background: blue; position: absolute;left:780px; top:280px;}
+		
+		
+		@font-face { font-family: 'noto'; src: url(./noto.otf) format('opentype얘기'); }
+/*이거는 맥에 노토산스 깔았을때의 
+@font-face {
+  font-family: webisfree;
+  src: { local('webisfree'),
+    url('/fonts/webisfree.ttf');}}
+*/
+	</style>
+</head>
+<body>
+
+	<section id="sectionA">
+	
+	<div id="intro">수빈아 내가 디지털로 생일편지 써준다고 했지?</br>간지 폭발 이지 어때?? 감동이니</br>너를 위해서 샘해밍턴을 준비해 봤어</br> 회사에서 할일 없어서 이렇게 한거 아니야~~ </I> </div>
+
+	<div id="intro2">
+		생축 🎊
+	</div>
+	<img class="bdbd" src="img/bdbd.gif">
+
+<marquee id="ruler" behavior="scroll" direction="left" scrollamount="14"loop="">
+    ❤ 수빈이 생일 축하해 ❤ 생일 지난지 쫌 되긴 했다 그치 ❤ 수빈이 생일 축하해 ❤ 생일 지난지 쫌 되긴 했다 그치 
+  </marquee>
+
+
+
+
+
+
+
+</section>
+	<script type="text/javascript">
+		cover.style.height = window.innerHeight + "px";
+		cover.style.display = "none";
+		coverImg.style.display = "none";
+		var t=0;
+		var k = setInterval(function(){
+			t++;
+			if(t > 30){
+				cover.style.display = "block";
+				coverImg.style.display = "block";
+			}else{
+				cover.style.display = "none";
+				coverImg.style.display = "none";
+			}
+		},100);
+		window.onmousemove = function(){
+			t=0;
+		}
+	</script>
+</body>
+</html>
